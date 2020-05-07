@@ -11,7 +11,7 @@ public class PostMethodJSONFile {
 
 		RestAssured.baseURI = "https://reqres.in/";
 
-		RestAssured.given().header("Contest_Type", "application/json").and().body(".//JSONFile//Users.json").when()
+		RestAssured.given().header("Contest_Type", "application/json").and().body("./TestData/Users.json").when()
 				.post("/api/users").then().statusCode(201).and().log().all();
 
 	}
