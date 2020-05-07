@@ -20,7 +20,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class TestWeatherAPIWithDataProvider extends BaseClass {
 	
-String currentDir=System.getProperty("user.dir")+File.separator+"Library\\TestData.xlsx";
+	String currentDir=System.getProperty("user.dir")+File.separator+"TestData"+File.separator+"TestWeatherAPI.xlsx";
 	
 	//Data Provider Concept
 	
