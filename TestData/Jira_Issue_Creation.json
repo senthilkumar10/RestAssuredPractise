@@ -1,0 +1,13 @@
+{
+  "fields": {
+    "project":
+    {
+      "key": "MAR"
+    },
+    "summary": "Senthil-Pol-Created by RA with Attachment",
+    "description": "New Defect Senthil-Pol Created by RA with Attachment",
+    "issuetype": {
+      "name": "Bug"
+    }
+  }
+}

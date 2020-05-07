@@ -5,12 +5,13 @@
 	<groupId>RestAssuredPractise</groupId>
 	<artifactId>RestAssuredPractise</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
-			<version>4.0.0</version>
+			<version>4.3.0</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
@@ -24,7 +25,7 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>6.14.3</version>
+			<version>7.1.0</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.hamcrest/java-hamcrest -->
@@ -62,8 +63,52 @@
 			<version>2.41.2</version>
 		</dependency>
 
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>5.5.0</version>
+		</dependency>
 
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>5.5.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.intuit.karate</groupId>
+			<artifactId>karate-apache</artifactId>
+			<version>0.9.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.intuit.karate</groupId>
+			<artifactId>karate-junit5</artifactId>
+			<version>0.9.5</version>
+		</dependency>
 
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>8</source>
+					<target>8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+
+		<testResources>
+			<testResource>
+				<directory>src/test/java</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</testResource>
+		</testResources>
+	</build>
 
 </project>
