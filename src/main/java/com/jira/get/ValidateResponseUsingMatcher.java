@@ -4,16 +4,13 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
-import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
 import org.testng.annotations.Test;
-import static org.hamcrest.Matchers.*;
+
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import java.util.Map;
+
+import static org.hamcrest.Matchers.equalTo;
 
 public class ValidateResponseUsingMatcher {
 
@@ -40,7 +37,7 @@ public class ValidateResponseUsingMatcher {
                 .assertThat()
                 .contentType(ContentType.JSON)
                 .assertThat()
-                .body("total",equalTo(148));
+                .body("total",equalTo(1097));
 
 
        // response.prettyPrint();
